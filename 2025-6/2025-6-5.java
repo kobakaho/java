@@ -52,8 +52,8 @@ public class Main {
         //プルダウンにしてみる
 
         System.out.println("<select name='job'>");
-        for (String member : array) { // 配列を一つずつ取り出しmember変数に代入
-          System.out.println("<option>"+member+"</option>") //犬猿キジ member変数を出力
+        for (String member : array) { 
+          System.out.println("<option>"+member+"</option>")
         }
         System.out.println("</select>");
     }
@@ -96,7 +96,7 @@ public class Main {
         System.out.println(array.length);  //出力　3
 
         for (String belt : array) {
-          System.out.println(belt + "!"));  //出力　タツ! トリ! バッタ!
+          System.out.println(belt + "!");  //出力　タツ! トリ! バッタ!
         }
 
     }
@@ -133,7 +133,7 @@ public class Main {
         String[] array = data.split(",");
 
         for (String belt : array) {
-          System.out.println(belt + "が現れた"));  //出力　タツが現れた トリが現れた バッタが現れた
+          System.out.println(belt + "が現れた");  //出力　タツが現れた トリが現れた バッタが現れた
         }
 
         int num = belt.length; //belt配列の長さ
