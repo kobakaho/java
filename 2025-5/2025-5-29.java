@@ -50,7 +50,8 @@ public class Main {
         String greeting  = scan.nextInt();
 
         if (greeting.equals("Hello")){ 
-        // 文字列の場合"=="でなく"equals"
+        // 文字列の場合"=="でなく"equals"　完全一致
+        // 含まれるか　contains
             System.out.println("Hello");
         } else { 
             System.out.println("World");
