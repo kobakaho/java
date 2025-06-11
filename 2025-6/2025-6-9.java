@@ -83,20 +83,24 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         
+        // 文字列から部分文字列を取り出してから整数にキャストする
         int h = Integer.parseInt(s.substring(0, 2));
         int m = Integer.parseInt(s.substring(3, 5));
         
+        //　分に＋30分して60に達したとき
         if (m + 30 >= 60) {
             h = h + 1;
-            m = m + 30 - 60; 
+            m = m + 30 - 60; // ex 45分+30分-60分=15分
         } else {
             h = h;
             m = m + 30; 
         }
 
+        // 最後は文字列で出力しないといけないので整数から文字列にキャスト
         String newH = Integer.toString(h);
         String newM = Integer.toString(m); 
 
+        // 文字列で出力するので手前に0つける条件
         if (newH.length() == 1) {
             newH = "0" + newH;
         }
