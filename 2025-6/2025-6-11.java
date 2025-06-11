@@ -42,3 +42,57 @@ public class Main {
         }
     }
 }
+
+// 3の倍数の数をカウントする
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        // 3の倍数があったらansに+1する　それが数と見なせる
+        int ans = 0;
+
+        for (int i = 0; i < n; i++) {
+            int a = sc.nextInt();
+
+            if (a % 3 == 0) {
+                ans += 1;
+            }
+        }
+
+        System.out.println(ans);
+    }
+}
+
+// 7がある？YES/NO
+
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        boolean flag = false;
+        // 論地演算　true||false
+        //　条件が揃ったら旗上げて上がったかどうかを結果として出力する
+
+        for (int i = 0; i < n; i++) {
+            int a = sc.nextInt();
+            
+            if (a == 7) {
+                flag = true;
+            }
+        }
+
+        if (flag) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+    }
+}
